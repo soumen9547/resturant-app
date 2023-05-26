@@ -5,7 +5,7 @@ export const Menucard = ({ menuData }) => {
         <>
             <section className='main-card--cointainer'>
                 {menuData.map((ele) => {
-                    const{id,name,category,image,description} = ele;
+                    const{id,name,image,description} = ele;
                     return (
                         <div className='card-container' key={id}>
                             <div className='card'>

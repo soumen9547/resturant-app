@@ -5,9 +5,9 @@ export const Navbar = ({filterIteam,menuList}) => {
         <>
             <nav className='navbar'>
                 <div className="btn-group">
-                    {menuList.map((ele)=>{
+                    {menuList.map((ele,index)=>{
                         return (
-                            <button className="btn-group__item" onClick={() => filterIteam(ele)}>{ele}</button>
+                            <button  key={index} className="btn-group__item" onClick={() => filterIteam(ele)}>{ele}</button>
                         )
                     })}
                 </div>
